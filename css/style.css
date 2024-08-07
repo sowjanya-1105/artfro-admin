@@ -1,10 +1,99 @@
 /* login page  -- start -- */
-.login_page{
-    background-color: gray;
+
+html {
+    height: 100%;
+    margin: 0;
 }
-.border-column{
-    border: 1px solid red;
+:root {
+    --black: #000;
+    --white: #ffffff;
+    --orange: #ff4400;
+  }
+.login-form {
+    width: 350px;
+    border: 2px solid var(--white);
+    
+
 }
+
+.heading h1 {
+    color: var(--white);
+    font-family: serif;
+}
+
+.heading,.Email_head,.password_head,.check_password,.forgot_password,.submit_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.image_set{
+    height: 100vh;
+    background-image: url(../assests/bcImg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+    
+    
+}
+.Email_head span,.password_head span{
+    transform: translate(-30px,0px);
+}
+.Email,.password{
+    width: 280px;
+    height:40px ;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+
+}
+.check_password{
+ margin-left: -11rem;
+ color: var(--white);
+
+}
+.checkBox{
+    color: var(--orange);
+}
+.forgot_password a{
+    margin-top: -60px;
+
+    margin-left: 10rem;
+    text-decoration: none;
+    color: var(--black);
+    color: var(--white);
+}
+.forgot_password a:hover{
+    color: var(--orange);
+}
+.submit_btn .submit_details{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: bold;
+    border: none;
+    padding: 0px !important;
+}
+.submit_btn .submit_details:hover{
+    background-color: deeppink;
+    /* transition-delay: 0.45s; */
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* login page -- end -- */
