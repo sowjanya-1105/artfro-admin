@@ -21,31 +21,32 @@
                 <div class="heading">
                     <h1>Login</h1>
                 </div>
-                <form>
-                    
+                <form id="submit_login_form">
+
                     <div class="Email_head">
                         <label for="Email"></label>
-                        <input type="email" name="name" id="name" placeholder="Enter Email" class="Email"> <span
-                         class="fa-solid fa-envelope"></span>
-                    </div>
-                    <div class="password_head">
-                        <label for="password"></label>
-                        <input type="password" name="password" id="pass" placeholder="Password" class="password"> <span
-                            class="fa fa-lock"></span>
-                    </div>
-                    <div class="check_password">
-        
-                        <input type="checkbox" class="checkBox" id="check">
-                        <label for="checkbox">Remember Me</label>
+                        <input type="email" name="name" id="user_email" placeholder="Enter Email" class="Email"> <span
+                            class="fa-solid fa-envelope"></span>
                         
                     </div>
-                    <div class="forgot_password">
+                    <div id="user_email_error" class="error_msg"></div>
+                    <div class="password_head">
+                        <label for="password"></label>
+                        <input type="password" name="password" id="user_password" placeholder="Password"
+                            class="password"> <span class="fa fa-lock"></span>
+                    </div>
+                    <div id="user_password_error" class="error_msg"></div>
+                    <div class="check_password">
+                        <input type="checkbox" class="checkBox" id="check">
+                        <label for="checkbox">Remember Me</label>
+                    </div>
+                    <!-- <div class="forgot_password">
                         <a href="#">
                             <p>Forgot Password</p>
                         </a>
-                    </div>
+                    </div> -->
                     <div class="submit_btn">
-                        <input type="button" value="Submit" class="submit_details">
+                        <input type="submit" value="Submit" class="submit_details">
                     </div>
                 </form>
             </div>

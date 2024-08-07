@@ -9,11 +9,10 @@ html {
     --white: #ffffff;
     --orange: #ff4400;
   }
+
 .login-form {
     width: 350px;
     border: 2px solid var(--white);
-    
-
 }
 
 .heading h1 {
@@ -29,7 +28,7 @@ html {
 }
 
 .image_set{
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url(../assests/bcImg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -59,17 +58,17 @@ html {
 .checkBox{
     color: var(--orange);
 }
-.forgot_password a{
+/* .forgot_password a{
     margin-top: -60px;
 
     margin-left: 10rem;
     text-decoration: none;
     color: var(--black);
     color: var(--white);
-}
-.forgot_password a:hover{
+} */
+/* .forgot_password a:hover{
     color: var(--orange);
-}
+} */
 .submit_btn .submit_details{
     width: 120px;
     height: 40px;
@@ -83,6 +82,11 @@ html {
 .submit_btn .submit_details:hover{
     background-color: deeppink;
     /* transition-delay: 0.45s; */
+}
+
+
+.error_msg{
+    color: red;
 }
 
 
