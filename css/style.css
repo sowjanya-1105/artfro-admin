@@ -1,7 +1,6 @@
 /* login page  -- start -- */
 
 html {
-    height: 100%;
     margin: 0;
 }
 
@@ -16,7 +15,6 @@ html {
 
 .login-form {
     width: 350px;
-    /* border: 2px solid var(--white); */
 }
 
 .heading h1 {
@@ -44,9 +42,6 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-
-
-
 }
 
 .Email_head span,
@@ -122,7 +117,6 @@ html {
 /* side navbar ---start--- */
 
 .sideNavbar {
-    height: 100vh;
     width: 200px;
     background-color: var(--bluewash);
 }
@@ -133,10 +127,16 @@ html {
     background-color: var(--bluewash);
     color: var(--white);
     border-bottom: 1px solid var(--white);
+    height: 12vh !important;
 }
 
 .nav_head_top img {
     width: 100%;
+}
+
+.list_items{
+    height: 80vh !important;
+    overflow-y: auto;
 }
 
 .nav_ul_items{
@@ -147,8 +147,6 @@ html {
     list-style-type: none;
     line-height: 50px;
     padding-left: 1rem;
-
-
 }
 .sidebar_items .list_items .nav_ul_items  li i,.footer_profile i  {
     color: var(--white);
@@ -167,23 +165,42 @@ html {
 
 
 }
+.footer_profile{
+    padding-top: 1rem;
+    padding-left: 2rem;
+    height: 8vh !important;
+    border-top: 1px solid var(--white);
+}
 
 .footer_profile span {
     color: var(--white);
-    margin: 5px;
+    padding-left: 0.5rem;
+   
 }
 
 .footer_profile i {
     font-size: 20px;
 }
 
-.footer_profile {
-    text-align: center;
-    position: relative;
-    top: 30px;
-    /* background-color: #213046; */
-    padding: 10px;
-    border-top: 1px solid var(--white);
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+
+  ::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #6d6d6d; 
+}
+
 
 /* side navbar ---end--- */
