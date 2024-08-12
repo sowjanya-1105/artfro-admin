@@ -4,15 +4,19 @@ html {
     height: 100%;
     margin: 0;
 }
+
 :root {
     --black: #000;
     --white: #ffffff;
     --orange: #ff4400;
-  }
+    --bluewash: #213046;
+    --bluelightwash: rgba(178,142,250,.2);
+    
+}
 
 .login-form {
     width: 350px;
-    border: 2px solid var(--white);
+    /* border: 2px solid var(--white); */
 }
 
 .heading h1 {
@@ -20,46 +24,73 @@ html {
     font-family: serif;
 }
 
-.heading,.Email_head,.password_head,.check_password,.forgot_password,.submit_btn {
+.heading,
+.Email_head,
+.password_head,
+.check_password,
+.forgot_password,
+.loading_gif_head,
+.sub_btn {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
 }
 
-.image_set{
+.one_side_img {
     /* height: 100vh; */
     background-image: url(../assests/bcImg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    
-    
-    
+
+
+
 }
-.Email_head span,.password_head span{
-    transform: translate(-273px,0px);
+
+.Email_head span,
+.password_head span {
+    transform: translate(-268px, 0px);
 }
-.Email,.password{
+
+.password_head #show_password_eye {
+    transform: translate(-40px, 0px);
+    cursor: pointer;
+
+
+}
+
+.password_head {
+    position: relative;
+    left: 10px;
+}
+
+.email,
+.password {
     width: 280px;
-    height:40px ;
+    height: 40px;
     border-radius: 10px;
     border: none;
     font-size: 15px;
-    padding: 10px 30px;
+    padding: 10px 35px;
 
 }
-.check_password{
- margin-left: -11rem;
- color: var(--white);
+
+.loading_gif_head .loading_gif {
+    width: 35px;
+
 
 }
-.checkBox{
-    color: var(--orange);
+
+.loading_gif_head {
+    display: flex;
+    justify-content: center;
 }
 
-.submit_btn .submit_details{
+
+.submit_btn {
+    margin: auto;
     width: 120px;
     height: 40px;
     border-radius: 10px;
@@ -68,28 +99,91 @@ html {
     font-weight: bold;
     border: none;
     padding: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/* .submit_btn .submit_details:hover{
-    background-color: deeppink;
-} */
+
+#loading_gif_id {
+    width: 25px;
+    height: 25px;
+}
 
 
-.error_msg{
+
+.error_msg {
     color: red;
 }
 
 
 
-
-
-
-
-
-
-
-
-
 /* login page -- end -- */
 
+/* side navbar ---start--- */
+
+.sideNavbar {
+    height: 100vh;
+    width: 200px;
+    background-color: var(--bluewash);
+}
+
+.sidebar_items .nav_head_top {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--bluewash);
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
+}
+
+.nav_head_top img {
+    width: 100%;
+}
+
+.nav_ul_items{
+    padding-left:  1rem !important;
+}
+
+.sidebar_items .list_items .nav_ul_items li {
+    list-style-type: none;
+    line-height: 50px;
+    padding-left: 1rem;
 
 
+}
+.sidebar_items .list_items .nav_ul_items  li i,.footer_profile i  {
+    color: var(--white);
+}
+
+.sidebar_items .list_items .nav_ul_items li:hover {
+    background: linear-gradient(90deg,rgba(178,142,250,.2),#d5c0ff);
+    border-radius:20px 0px 0px 20px;
+}
+
+.sidebar_items .list_items .nav_ul_items li a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+
+
+
+}
+
+.footer_profile span {
+    color: var(--white);
+    margin: 5px;
+}
+
+.footer_profile i {
+    font-size: 20px;
+}
+
+.footer_profile {
+    text-align: center;
+    position: relative;
+    top: 30px;
+    /* background-color: #213046; */
+    padding: 10px;
+    border-top: 1px solid var(--white);
+}
+
+/* side navbar ---end--- */

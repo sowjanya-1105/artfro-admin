@@ -15,42 +15,60 @@
 
 <body class="login_page">
     <div class="image_set">
+        <div class="container">
 
-        <div class="container d-flex justify-content-center align-items-center vh-100">
-            <div class="login-form border rounded shadow">
-                <div class="heading">
-                    <h1>Login</h1>
+            <div class="row images_side_by_side">
+                <div class="col">
+                    <img src="./assests/oneSide.jpg" alt="" style="width: 100%; height: 100vh;">
+                    <!-- <h1>hello</h1> -->
                 </div>
-                <form id="submit_login_form">
+                <div class="col one_side_img">
 
-                    <div class="Email_head">
-                        <label for="Email"></label>
-                        <input type="email" name="name" id="user_email" placeholder="Enter Email" class="Email"> <span
-                            class="fa-solid fa-envelope"></span>
-                        
+                    <div class="container d-flex justify-content-center align-items-center vh-100">
+                        <div class="login-form  rounded shadow">
+                            <div class="heading">
+                                <h1>Login</h1>
+                            </div>
+                            <form id="submit_login_form">
+
+                                <div class="Email_head">
+                                    <label for="Email"></label>
+
+                                    <input type="email" name="name" id="user_email" placeholder="Enter Email"
+                                        class="email"> <span class="fa-solid fa-envelope"></span>
+
+                                </div>
+                                <div id="user_email_error" class="error_msg"></div>
+                                <div class="password_head">
+                                    <label for="password"></label>
+                                    <input type="password" name="password" id="user_password" placeholder="Password"
+                                        class="password"> <span class="fa fa-lock"></span><i
+                                        class="fa-solid fa-eye-slash" id="show_password_eye"></i>
+                                    <!-- <span class="fa fa-lock"></span> -->
+                                </div>
+                                <div id="user_password_error" class="error_msg"></div>
+                                    <button class="submit_btn" id="submit_btn">
+                                        <div class="spinner-border text-light" id="loading_gif_id" role="status"
+                                            style="display: none;">
+                                            <span class="visually-hidden ">Loading...</span>
+                                        </div>
+                                        <div>
+                                            <span class="sub_btn">Submit</span>
+                                        </div>
+                                    </button>
+                                
+                            </form>
+                        </div>
                     </div>
-                    <div id="user_email_error" class="error_msg"></div>
-                    <div class="password_head">
-                        <label for="password"></label>
-                        <input type="password" name="password" id="user_password" placeholder="Password"
-                            class="password"> <span class="fa fa-lock"></span>
-                    </div>
-                    <div id="user_password_error" class="error_msg"></div>
-                    <div class="check_password">
-                        <input type="checkbox" class="checkBox" id="check">
-                        <label for="checkbox">Show Password</label>
-                    </div>
-                    <!-- <div class="forgot_password">
-                        <a href="#">
-                            <p>Forgot Password</p>
-                        </a>
-                    </div> -->
-                    <div class="submit_btn">
-                        <input type="submit" value="Submit" class="submit_details">
-                    </div>
-                </form>
+                    <!-- <img src="./assests/oneSide.jpg" alt=""  style="width: 100%; height: 100vh;"> -->
+                </div>
+                <!-- <div class="col">
+                    <img src="./assests/oneSide.jpg" alt="" style="width: 100%; height: 100vh;">
+                </div> -->
             </div>
         </div>
+
+
     </div>
 
     <!-- Js -->
