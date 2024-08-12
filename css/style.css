@@ -204,3 +204,12 @@ html {
 
 
 /* side navbar ---end--- */
+
+
+.main-div{
+    display: flex;
+    
+}
+#myTable{
+    padding: 20px;
+}
