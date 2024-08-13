@@ -5,7 +5,7 @@
 // function store(){
 //     if(sessionStorage.getItem("is_user_id")){
 //         console.log("ggggg");
-//         window.location.href = "home.html";
+//         window.location.href = "dashboard.html";
 
 //     }else{
 //         console.log("else");
@@ -18,7 +18,7 @@
 //     console.log("load");
 //     if(sessionStorage.getItem("is_user_id")){
 //         console.log("ggggg");
-//         window.location.href = "home.html";
+//         window.location.href = "dashboard.html";
 
 //     }else{
 //         console.log("else");
@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (sessionStorage.getItem("is_user_id") != null) {
         console.log("if");
 
-        if (!currentPage.includes("home.html")) {
-            window.location.href = "home.html";
+        if (!currentPage.includes("dashboard.html")) {
+            window.location.href = "dashboard.html";
         }
     } else {
         console.log("else");
@@ -166,7 +166,7 @@ document.getElementById("submit_login_form").addEventListener("submit", function
                 userEnteredPassword.value = "";
                 document.getElementById("loading_gif_id").style.display = "none";
                 sessionStorage.setItem("is_user_id","true");
-                window.location.href = "home.html";
+                window.location.href = "dashboard.html";
             }, 2000);
 
         }
