@@ -121,8 +121,7 @@ document.addEventListener('input', (evt) => {
 // }
 // console.log("jjj" ,store());
 
-let email = "test@gmail.com";
-let password = 123456;
+
 
 
 
@@ -203,10 +202,40 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
 
+
+
+
+
 });
 
 
 
+console.log("iiiii");
+
+
+    // const active_items = document.querySelectorAll(".nav_list_items");
+
+
+    // active_items.addEventListener("click",function(){
+    //     console.log("itemmmmm",active_items);
+        
+    //     active_items.forEach(item =>{
+    //         item.classList.remove("active");
+    //         this.item.classList.add("active");
+    //     })
+    // })
+
+    
+
+
+  
+    
+function pageChange(){
+    sessionStorage.clear();
+    window.location.href = "index.html";
+
+
+}
 
 
 

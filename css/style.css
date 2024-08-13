@@ -10,6 +10,8 @@ html {
     --orange: #ff4400;
     --bluewash: #213046;
     --bluelightwash: rgba(178,142,250,.2);
+    --red: #ff0000;
+    --Beige : #d5c0ff;
     
 }
 
@@ -107,7 +109,7 @@ html {
 
 
 .error_msg {
-    color: red;
+    color: var(--red);
 }
 
 
@@ -119,6 +121,9 @@ html {
 .sideNavbar {
     width: 200px;
     background-color: var(--bluewash);
+}
+.sidebar_items{
+    width: inherit;
 }
 
 .sidebar_items .nav_head_top {
@@ -147,13 +152,20 @@ html {
     list-style-type: none;
     line-height: 50px;
     padding-left: 1rem;
+    cursor: pointer;
 }
 .sidebar_items .list_items .nav_ul_items  li i,.footer_profile i  {
     color: var(--white);
 }
 
 .sidebar_items .list_items .nav_ul_items li:hover {
-    background: linear-gradient(90deg,rgba(178,142,250,.2),#d5c0ff);
+    background: linear-gradient(90deg, var(--bluelightwash), var(--Beige));
+    border-radius:20px 0px 0px 20px;
+}
+
+
+.nav_ul_items .active {
+    background: linear-gradient(90deg, var(--bluelightwash), var(--Beige));
     border-radius:20px 0px 0px 20px;
 }
 
@@ -202,6 +214,13 @@ html {
     background: #6d6d6d; 
 }
 
+.footer_profile {
+    cursor: pointer;
+}
+#log_out{
+    border: none;
+    background-color: var(--bluewash);
+}
 
 /* side navbar ---end--- */
 
@@ -213,3 +232,11 @@ html {
 #myTable{
     padding: 20px;
 }
+
+
+
+/* home ---start---- */
+
+
+
+
