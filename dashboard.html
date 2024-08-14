@@ -35,59 +35,139 @@
           <ul class="nav_ul_items" id="nav_ul_items">
             <li class="nav_list_items active"><i class="fa-solid fa-house"></i><a href="./dashboard.html">Dashboard</a>
             </li>
-            <li class="nav_list_items"><i class="fa fa-paint-brush"></i><a href="./pages/artist.html">Artist</a></li>
-            <li class="nav_list_items"><i class="fa-solid fa-shop"></i><a href="./pages/shop.html">Shop</a>
+            <li class="nav_list_items"><i class="fa fa-paint-brush"></i><a href="./artist.html">Artist</a></li>
+            <li class="nav_list_items"><i class="fa-solid fa-shop"></i><a href="./shop.html">Shop</a>
             </li>
             <li class="nav_list_items"><i class="fa-solid fa-bell"></i><a
-                href="./pages/subscribers.html">Subscribers</a></li>
-            <li class="nav_list_items"><i class="fa-solid fa-users"></i><a href="./pages/users.html">Users</a></li>
-            <li class="nav_list_items"><i class="fa-solid fa-credit-card"></i><a href="./pages/cart_payments.html">Cart
+                href="./subscribers.html">Subscribers</a></li>
+            <li class="nav_list_items"><i class="fa-solid fa-users"></i><a href="./users.html">Users</a></li>
+            <li class="nav_list_items"><i class="fa-solid fa-credit-card"></i><a href="./cart_payments.html">Cart
                 Payments</a></li>
             <li class="nav_list_items"><i class="fa-solid fa-hand-holding-dollar"></i><a
-                href="./pages/donations.html">Donations</a></li>
-            <li class="nav_list_items"><i class="fa-solid fa-headset"></i><a href="./pages/support_request.html">Support
+                href="./donations.html">Donations</a></li>
+            <li class="nav_list_items"><i class="fa-solid fa-headset"></i><a href="./support_request.html">Support
                 Request</a></li>
           </ul>
         </div>
         <div class="footer_profile" id="footer_profile">
-          <button id="log_out" onclick="pageChange()"><i class="fa-solid fa-right-from-bracket"></i><span>Log
+          <button id="log_out" onclick="logOut()"><i class="fa-solid fa-right-from-bracket"></i><span>Log
               Out</span></button>
         </div>
       </nav>
     </div>
 
+    <div class="dashboard_navbar">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4 ">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+      <nav class="navbar top_navbar w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <!-- <img src="#" alt="Logo" height="50" class="d-inline-block align-text-top"> -->
+            <!-- Bootstrap -->
+          </a>
         </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+      </nav>
+
+      <div class="cards_main_div">
+
+        <div class="container">
+          <div class="first_row mt-5">
+            <div class="row">
+              <div class="col-sm-4 ">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card_headings">
+                      <h5 class="card-title">Users Register</h5>
+                      <span><i class="fa-solid fa-users"></i></span>
+                    </div>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="./users.html" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card_headings">
+                      <h5 class="card-title">Cart Payments</h5>
+                      <span><i class="fa-solid fa-credit-card"></i></span>
+
+                    </div>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="./cart_payments.html" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card_headings">
+                      <h5 class="card-title">Donations</h5>
+                      <span><i class="fa-solid fa-hand-holding-dollar"></i></span>
+
+
+                    </div>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="./donations.html" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="second_row mt-3">
+            <div class="row">
+              <div class="col-sm-4 ">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card_headings">
+                      <h5 class="card-title">Subscribers</h5>
+                      <span><i class="fa-solid fa-bell"></i></span>
+
+
+                    </div>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="./subscribers.html" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card_headings">
+                      <h5 class="card-title">Shop</h5>
+                      <span><i class="fa-solid fa-shop"></i></span>
+
+                    </div>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="./shop.html" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card_headings">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <span><i class="fa-solid fa-credit-card"></i></span>
+
+                    </div>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+
         </div>
       </div>
+
+
     </div>
+
+
+
 
   </div>
 

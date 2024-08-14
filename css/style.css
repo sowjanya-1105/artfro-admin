@@ -235,7 +235,32 @@ html {
 
 
 
-/* dashboard ---start---- */
+/* dashboard cards ---start---- */
+
+.card_headings{
+    display: flex;
+    justify-content: space-between;
+}
+.card_headings span i{
+    color: var(--orange);
+}
+
+/* top navbar */
+
+ .top_navbar{
+    background-color: cadetblue;
+    height: 75px;
+    width: 100% !important;
+
+}
+
+
+/* subscribers */
+#myTable{
+    width: 1000px;
+}
+
+
 
 
 

@@ -1,31 +1,5 @@
 
 
-
-
-// function store(){
-//     if(sessionStorage.getItem("is_user_id")){
-//         console.log("ggggg");
-//         window.location.href = "dashboard.html";
-
-//     }else{
-//         console.log("else");
-//         window.location.href = "index.html";
-
-//     }
-
-// }
-// document.addEventListener('DOMContentLoaded', function(){
-//     console.log("load");
-//     if(sessionStorage.getItem("is_user_id")){
-//         console.log("ggggg");
-//         window.location.href = "dashboard.html";
-
-//     }else{
-//         console.log("else");
-//         window.location.href = "index.html";
-
-//     }
-// })
 document.addEventListener('DOMContentLoaded', function () {
 
     const currentPage = window.location.pathname;
@@ -34,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (sessionStorage.getItem("is_user_id") != null) {
         console.log("if");
 
-        if (!currentPage.includes("dashboard.html")) {
-            window.location.href = "dashboard.html";
-        }
+        // if (!currentPage.includes("dashboard.html")) {
+        //     window.location.href = "dashboard.html";
+        // }
     } else {
         console.log("else");
 
@@ -83,43 +57,7 @@ document.addEventListener('input', (evt) => {
     }
 })
 
-// userEnteredEmail.addEventListener('input', (evt) => {
 
-//     if (evt.target.value === "") {
-//         document.getElementById("user_email_error").textContent = "Enter email"
-//     }
-
-//     else {
-//         document.getElementById("user_email_error").textContent = ""
-//     }
-
-// })
-
-
-
-// userEnteredPassword.addEventListener('input', (evt) => {
-
-//     if (evt.target.value === "") {
-//         document.getElementById("user_password_error").textContent = "Enter password"
-//     }
-//     else {
-//         document.getElementById("user_password_error").textContent = ""
-//     }
-
-// })
-// console.log("delete",sessionStorage.setItem("key" ,"name"));
-// console.log("item",sessionStorage.getItem("key"));
-// console.log("hhh",sessionStorage.removeItem("key"));
-// console.log("item",sessionStorage.getItem("key"));
-
-// function store(){
-//     if (sessionStorage.getItem ("key")=== null){
-//         window.location.href = "index.html";
-
-//     }
-
-// }
-// console.log("jjj" ,store());
 
 
 
@@ -210,27 +148,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-console.log("iiiii");
-
-
-    // const active_items = document.querySelectorAll(".nav_list_items");
-
-
-    // active_items.addEventListener("click",function(){
-    //     console.log("itemmmmm",active_items);
-        
-    //     active_items.forEach(item =>{
-    //         item.classList.remove("active");
-    //         this.item.classList.add("active");
-    //     })
-    // })
 
     
-
-
-  
-    
-function pageChange(){
+function logOut(){
     sessionStorage.clear();
     window.location.href = "index.html";
 
