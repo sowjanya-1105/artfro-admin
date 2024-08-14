@@ -293,9 +293,23 @@ html {
     width: 1000px;
 }
 
-
-
-
+.card-body .btn{
+    background-color: chocolate;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: block;
+}
+.card-body .btn:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    /* border-color: black; */
+}
+.card-body .card-text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px
+}
 
 
 
